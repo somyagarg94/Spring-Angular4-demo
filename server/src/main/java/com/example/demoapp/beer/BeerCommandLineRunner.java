@@ -17,7 +17,7 @@ public class BeerCommandLineRunner implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         // Top beers from https://www.beeradvocate.com/lists/top/
-        Stream.of("Take me to home", "Good Morning", "Very Hazy", "King Julius",
+        Stream.of( "Good Morning",  "King Julius",
                 "Budweiser", "Coors Light", "PBR").forEach(name ->
                 repository.save(new Beer(name))
         );
